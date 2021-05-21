@@ -1,0 +1,5 @@
+<!--components/default-block.wxml-->
+<view class="default-box">
+  <image class="default-icon" src="../../images/default.png"></image>
+  <text class="default-text">{{defaultText}}</text>
+</view>

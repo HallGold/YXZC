@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "car-list": "../../components/car-list/car-list"
+  }
+}

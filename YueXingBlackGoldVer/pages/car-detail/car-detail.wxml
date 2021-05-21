@@ -1,0 +1,84 @@
+<!--pages/car-detail/car-detail.wxml-->
+<import src="../../wxParser/index.wxml" />
+<view class="container">
+  <!-- banner -->
+  <swiper class="swiper" indicator-dots="false" autoplay="true" interval="5000" duration="1000">    
+    <block wx:for="{{ bannerList }}" wx:key="index">    
+      <swiper-item>    
+        <image class="slide-image" src="{{ item }}"/>    
+      </swiper-item>    
+    </block>    
+  </swiper>
+
+  <!-- 车简介 -->
+  <view class="car-overview">
+    <view class="overview_line flex-column">
+      <view class="overview_title">{{carInfo.title}}</view>
+      <view class="overview_price" wx:if="{{carInfo.price<10000}}">指导价：{{carInfo.price}}</view>
+      <view class="overview_price" wx:else>指导价：{{carInfo.price/10000}}万</view>
+    </view>
+  </view>
+  <view class="split-line"></view>
+
+  <!-- 配置相关 -->
+  <view class="setting_area">
+    <view class="setting_line flex-row">
+      <view class="setting_label">详细款型 <text class="gray_text">（可定制）</text> </view>
+      <view class="setting_detail">
+        {{carInfo.design}}
+      </view>
+    </view>
+    <view class="setting_line flex-row">
+      <view class="setting_label">外观颜色<text class="gray_text">（可定制）</text></view>
+      <view class="setting_detail">{{carInfo.carColor}}</view>
+    </view>
+    <view class="setting_line flex-row">
+      <view class="setting_label">内饰配置<text class="gray_text">（可定制）</text></view>
+      <view class="setting_detail">{{carInfo.interiorColor}}</view>
+    </view>
+    <view class="tips_area flex-row">
+      <view class="tips_block">
+        <view class="tips_text1">无需保证金</view>
+        <view class="tips_text2 gold">年付{{carInfo.price*0.0001*365}}元</view>
+        <view class="tips_text1">一年起租</view>
+      </view>
+      <view class="tips_block">
+        <view class="tips_text1">10%保证金,可退还</view>
+        <view class="tips_text2 gold">半年付{{(carInfo.price*0.0008*365)/2}}元</view>
+        <view class="tips_text1">一年起租</view>
+      </view>
+    </view>
+    <view class="tips_area flex-row">
+      <view class="tips_block">
+        <view class="tips_text1">30%保证金,可退还</view>
+        <view class="tips_text2 gold">季付{{(carInfo.price*0.0006*365)/4}}元</view>
+        <view class="tips_text1">一年起租</view>
+      </view>
+      <view class="tips_block">
+        <view class="tips_text1">50%保证金,可退还</view>
+        <view class="tips_text2 gold">月付{{(carInfo.price*0.0004*365)/12}}元</view>
+        <view class="tips_text1">一年起租</view>
+      </view>
+    </view>
+  </view>
+  <view class="split-line"></view>
+
+  <!-- 底部 -->
+  <view class="setting_area">
+    <view class="setting_line flex-row">
+      <view class="setting_label">标准配置价：</view>
+      <view class="setting_detail">￥{{carInfo.price}}</view>
+    </view>
+    <view class="setting_line flex-row">
+      <view class="setting_label">定制服务费：</view>
+      <view class="setting_detail">以实际定制内容产生的费用为准</view>
+    </view>
+  </view>
+  <view class="split-line"></view>
+
+  <!-- 富文本 -->
+  <template is="wxParser" data="{{wxParserData:article.nodes}}"/>
+
+  <!-- 按钮 -->
+  <view class="gold-btn" bindtap="goNext">咨询客服</view>
+</view>

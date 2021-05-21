@@ -1,0 +1,56 @@
+<!--pages/car-hosting/car-hosting.wxml-->
+<view class="container">
+  <!-- 车辆托管介绍 -->
+  <view class="title-line flex-row">
+    <image class="title-icon" src="../../images/tuoguan1.png"></image>
+    <view class="title-text">车辆托管介绍</view>
+  </view>
+  <view class="common-text">创客悦行正式推出车辆托管业务，车主可将爱车放置到创客悦行进行管理和维护，从而获取不菲收益。伴随着国民经济水平的日益发展，各种刚性需求不断升级，因此，人们对车辆的购买力度加大，车辆的养护及长期闲置问题不容小觑，这些逐渐成为车主所头疼的问题。针对这些用户群体，创客悦行推出了车辆托管业务，其目的也是从根本上解决车辆养护和长期闲置问题，车主不仅解决了自身需求，同时也为其增加额外收入、节约维修成本、提升养护质量。
+  </view>
+
+  <!-- 四大优势 -->
+  <view class="advantage-line flex-row">
+    <image class="advantage-icon" src="../../images/tuoguan2.png"></image>
+    <view class="advantage-text">四大优势</view>
+    <image class="advantage-icon" src="../../images/tuoguan2.png"></image>
+  </view>
+  <view class="advantage_content">
+    <view class="advantage_block flex-row">
+      <image class="block_icon" src="../../images/tuoguan3.png"></image>
+      <view class="block_right">
+        <text class="block_text1">优势1. 完善的车辆运营管理模式</text>
+        <view class="block_text2">创客悦行核心管理团队成员均具有多年车辆从业经历和管理经验，在为有车辆闲置需求客户带来收益的同时，也具备一套完整的运营体系，提供与之相关的全方位一站式服务，专人打理，车主省心更放心。</view>
+      </view>
+    </view>
+    <view class="advantage_block flex-row">
+      <image class="block_icon" src="../../images/tuoguan4.png"></image>
+      <view class="block_right">
+        <text class="block_text1">优势2. 闲置车辆增值服务</text>
+        <view class="block_text2">创客悦行将根据车主的意愿需求，量身定制收益方案，科学合理安排车主的闲置车辆，提供无限增值，让爱车为车主赚取相当可观的收益。</view>
+      </view>
+    </view>
+    <view class="advantage_block flex-row">
+      <image class="block_icon" src="../../images/tuoguan5.png"></image>
+      <view class="block_right">
+        <text class="block_text1">优势3. 爱车呵护服务</text>
+        <view class="block_text2">合约签订后，创客悦行专业人员将对爱车进行定期检查、保养，品质级专业呵护，让爱车时刻保持巅峰状态。</view>
+      </view>
+    </view>
+    <view class="advantage_block flex-row">
+      <image class="block_icon" src="../../images/tuoguan6.png"></image>
+      <view class="block_right">
+        <text class="block_text1">优势4. 其他增值服务</text>
+        <view class="block_text2">合约签订后，车主即可享受平台会员租车权益，无需充值即可享受会员折扣优惠。</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 平台承诺 -->
+  <view class="title-line mt80 flex-row">
+    <image class="title-icon" src="../../images/tuoguan7.png"></image>
+    <view class="title-text">平台承诺</view>
+  </view>
+  <view class="common-text">合约签订后，平台承诺车辆空置期内无条件赔付托管费用。</view>
+
+  <view class="gold-btn" bindtap="goNext">去托管</view>
+</view>

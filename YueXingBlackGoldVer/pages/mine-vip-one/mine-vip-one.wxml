@@ -1,0 +1,20 @@
+<!--pages/mine-vip-one/mine-vip-one.wxml-->
+<view class="container">
+  <view class="vip-header">
+    <view class="mine-info flex-row">
+      <image class="info-icon" src="{{userIcon}}"></image>
+      <view class="info-right flex-column">
+        <view class="info-name">{{userName}}</view>
+        <view class="info-level">普通用户</view>
+      </view>
+    </view>
+  </view>
+  <view class="vip-card">
+    <view class="flex-row">
+      <view class="vip-text1">完善会员信息，开启会员超值</view>
+      <view class="black-btn" bindtap="goNext">完善信息</view>
+    </view>
+    <view class="vip-text1" style="margin-top:56rpx;">0成长值</view>
+    <view class="vip-text2">完善信息即可成为会员</view>
+  </view>
+</view>

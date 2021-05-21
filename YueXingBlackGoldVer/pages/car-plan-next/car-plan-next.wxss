@@ -1,0 +1,5 @@
+/* pages/car-plan-next/car-plan-next.wxss */
+.container{
+  width: 100%;
+  background-color: #F1F2F5;
+}

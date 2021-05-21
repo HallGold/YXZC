@@ -1,0 +1,54 @@
+/* pages/car-hosting-next/car-hosting-next.wxss */
+.process-first{
+  width: 100%;
+}
+.info-line{
+  width: 100%;
+  padding: 0 50rpx;
+  line-height: 100rpx;
+}
+.info-title{
+  color: #252621;
+}
+.info-input{
+  text-align: right;
+}
+
+
+.next-btn{
+  width: 690rpx;
+  height: 80rpx;
+  margin: 80rpx auto;
+  line-height: 80rpx;
+  background: linear-gradient(91deg, #BA9478, #FFE2BF);
+  border-radius: 40rpx;
+  color: #252621;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+
+.process-third{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.success-icon{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 82rpx;
+}
+.success-tip1{
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.success-tip2{
+  width: 447rpx;
+  margin: 20rpx auto 300rpx auto;
+  color: #A3A3A3;
+  font-size: 24rpx;
+  text-align: center;
+}

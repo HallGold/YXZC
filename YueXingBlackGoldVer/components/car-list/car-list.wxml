@@ -1,0 +1,36 @@
+<!--components/car-list.wxml-->
+<view class="car-list-wrapper">
+  <scroll-view class="car-list" scroll-y="true" bindscrolltolower="getData">
+    <block wx:for="{{carList}}" wx:key="index">
+      <view class="car-item flex-row" data-id="{{item.id}}" bindtap="goDetail">
+        <view class="car_left flex-column">
+          <view class="car_title">{{item.title}}</view>
+          <view class="car_intro flex-row">
+            <view class="car_intro_tag" wx:if="{{item.design}}">{{item.design}}</view>
+            <!-- <block wx:for="{{item.lables}}" wx:for-item="tag" wx:key="index">
+              <view class="car_intro_tag">{{tag.name}}</view>
+            </block> -->
+          </view>
+          <view class="car_price" wx:if="{{type == 1}}">
+            <text class="car_red">{{item.price}}元</text>/年
+          </view>
+          <view class="car_price" wx:else>
+            <text class="car_red">{{item.price}}元</text>/天
+          </view>
+          <!-- <view class="car_price" wx:if="{{item.price<10000}}">
+              <text class="car_red">{{item.price}}</text>起
+            </view>
+            <view class="car_price" wx:else>
+              <text class="car_red">{{item.price/10000}}</text>万起
+            </view> -->
+        </view>
+        <view class="car_right flex-column">
+          <image class="car_icon" src="{{item.image}}"></image>
+          <view class="car_btn more">查看详情 ></view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<default-block defaultText="暂无数据" wx:if="{{carList.length <= 0}}"></default-block>
+

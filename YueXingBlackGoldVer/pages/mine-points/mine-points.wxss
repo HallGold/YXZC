@@ -1,0 +1,87 @@
+/* pages/mine-points/mine-points.wxss */
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+}
+.integral-area{
+  position: relative;
+  width: 690rpx;
+  height: 220rpx;
+  border-radius: 8rpx;
+  margin: 20rpx auto 0 auto;
+  padding: 0 20rpx;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #252621;
+}
+.integral-text1{
+  font-size: 26rpx;
+  color: #888888;
+}
+.integral-text2{
+  font-size: 68rpx;
+  color: #BA9478;
+}
+.integral-icon{
+  position: absolute;
+  right: 30rpx;
+  bottom: 20rpx;
+  width: 238rpx;
+}
+
+
+.tab-area{
+  width: 100%;
+  line-height: 96rpx;
+}
+.tab{
+  width: 50%;
+  text-align: center;
+}
+.active-tab{
+  font-weight: bold;
+  color: #252621;
+}
+
+.split-line{
+  width: 100%;
+  height: 30rpx;
+  background-color: #F6F6F6;
+}
+
+
+.points-list{
+  width: 100%;
+  height: calc( 100vh - 366rpx );
+  margin-top: 30rpx;
+}
+.points-line{
+  width: 100%;
+  padding: 30rpx 50rpx;
+  border-bottom: 1rpx solid rgba(242,242,242,1);
+}
+.points-icon{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.points-text2{
+  font-size: 24rpx;
+  color: #BCBCBC;
+}
+.points-num-add{
+  font-size: 32rpx;
+  color: #BA9478;
+}
+.points-num-plus{
+  font-size: 32rpx;
+  color: #E7221F;
+}
+
+
+.rule-area{
+  margin: 30rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+}

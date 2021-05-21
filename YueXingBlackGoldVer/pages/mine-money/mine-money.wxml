@@ -1,0 +1,39 @@
+<!--pages/mine-money/mine-money.wxml-->
+<view class="container">
+  <!-- 余额 -->
+  <view class="integral-area flex-column">
+    <view class="integral-text1">可用余额</view>
+    <view class="integral-text2">{{balance}}</view>
+    <image class="integral-icon" mode="widthFix" src="../../images/black_icon.png"></image>
+  </view>
+  <!-- tab -->
+  <view class="tab-area flex-row">
+    <view class="tab {{ activeTab=='1' ? 'active-tab':'' }}" data-index="1" bindtap="switchTab">余额明细</view>
+    <view class="tab {{ activeTab=='2' ? 'active-tab':'' }}" data-index="2" bindtap="switchTab">使用说明</view>
+  </view>
+
+  <view class="split-line"></view>
+  <!-- 余额明细 -->
+  <view wx:if="{{ activeTab == '1'}}">
+    <scroll-view class="points-list" scroll-y="true" bindscrolltolower="getDataMoneyList" wx:if="{{ pointsList.length > 0}}">
+      <view class="points-line flex-row" wx:for="{{ pointsList }}" wx:key="index">
+        <view class="flex-row">
+          <view>
+            <view class="points-text1" wx:if="{{item.type == 0}}">充值</view>
+            <view class="points-text1" wx:if="{{item.type == 1}}">消费</view>
+            <view class="points-text2">{{item.date}}</view>
+          </view>
+        </view>
+        <view class="points-num-plus"  wx:if="{{item.type == 1}}">-{{item.money}}</view>
+        <view class="points-num-add" wx:else>+{{item.money}}</view>
+      </view>
+    </scroll-view>
+    <default-block wx:else defaultText="暂无更多积分"></default-block>
+  </view>
+
+  <view class="rule-area" wx:elif="{{ activeTab == '2'}}">
+    <view>1.线上小程序注册会员后可到公众号进行充值；</view>
+    <view>2.充值金额可到店消费；</view>
+    <view>3.消费满100元可积1分，以此类推；</view>
+  </view>
+</view>

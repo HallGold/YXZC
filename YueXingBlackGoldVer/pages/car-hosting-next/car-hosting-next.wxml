@@ -1,0 +1,46 @@
+<!--pages/car-hosting-next/car-hosting-next.wxml-->
+<view class="container" wx:if="{{!showSuccess}}">
+  <view class="process-first">
+    <view class="info-line flex-row">
+      <view class="info-title">姓名</view>
+      <input class="info-input" type="text" placeholder="请填写真实姓名" placeholder-style="color:#DFDFDF;" data-label="name" bindinput="setInput" maxlength="10"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">联系电话</view>
+      <input class="info-input" type="number" placeholder="请填写联系电话" placeholder-style="color:#DFDFDF;" data-label="phone" bindinput="setInput" maxlength="11"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">牌照归属地</view>
+      <input class="info-input" type="text" placeholder="请填写牌照归属地" placeholder-style="color:#DFDFDF;" data-label="belongToArea" bindinput="setInput" maxlength="10"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">车辆品牌</view>
+      <input class="info-input" type="text" placeholder="请填写车辆品牌" placeholder-style="color:#DFDFDF;" data-label="brand" bindinput="setInput" maxlength="10"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">上牌时间</view>
+      <input class="info-input" type="text" placeholder="请填写上牌时间" placeholder-style="color:#DFDFDF;" data-label="licensedDate" bindinput="setInput" maxlength="10"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">车型</view>
+      <input class="info-input" type="text" placeholder="请填写车型" placeholder-style="color:#DFDFDF;" data-label="model" bindinput="setInput" maxlength="10"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">颜色</view>
+      <input class="info-input" type="text" placeholder="请填写颜色" placeholder-style="color:#DFDFDF;" data-label="color" bindinput="setInput" maxlength="10"></input>
+    </view>
+    <view class="info-line flex-row">
+      <view class="info-title">行驶里程</view>
+      <input class="info-input" type="text" placeholder="请填写行驶里程" placeholder-style="color:#DFDFDF;" data-label="mileage" bindinput="setInput" maxlength="10"></input>
+    </view>
+
+    <view class="next-btn" bindtap="submit">提交资料</view>
+  </view>
+</view>
+
+<!-- 提交成功 -->
+<view class="process-third" wx:if="{{showSuccess}}">
+  <image class="success-icon" src="../../images/success.png"></image>
+  <view class="success-tip1">提交成功</view>
+  <view class="success-tip2">1-2个工作日等待客服反馈！</view>
+</view>

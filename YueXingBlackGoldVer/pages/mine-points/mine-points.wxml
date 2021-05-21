@@ -1,0 +1,42 @@
+<!--pages/mine-points/mine-points.wxml-->
+<view class="container">
+  <!-- 积分 -->
+  <view class="integral-area flex-column">
+    <view class="integral-text1">可用积分</view>
+    <view class="integral-text2">{{integral}}</view>
+    <image class="integral-icon" mode="widthFix" src="../../images/black_icon.png"></image>
+  </view>
+  <!-- tab -->
+  <view class="tab-area flex-row">
+    <view class="tab {{ activeTab=='1' ? 'active-tab':'' }}" data-index="1" bindtap="switchTab">积分明细</view>
+    <view class="tab {{ activeTab=='2' ? 'active-tab':'' }}" data-index="2" bindtap="switchTab">积分规则</view>
+  </view>
+
+  <view class="split-line"></view>
+  <!-- 积分明细 -->
+  <view wx:if="{{ activeTab == '1'}}">
+    <scroll-view class="points-list" scroll-y="true" bindscrolltolower="getDataPointsList" wx:if="{{ pointsList.length > 0}}">
+      <view class="points-line flex-row" wx:for="{{ pointsList }}" wx:key="index">
+        <view class="flex-row">
+          <!-- <image class="points-icon" src="{{item.photo}}"></image> -->
+          <view>
+            <view class="points-text1" wx:if="{{item.type == 0}}">每日签到奖励</view>
+            <view class="points-text1" wx:if="{{item.type == 1}}">每日登录奖励</view>
+            <view class="points-text1" wx:if="{{item.type == 2}}">兑换积分</view>
+            <view class="points-text1" wx:if="{{item.type == 3}}">消费</view>
+            <view class="points-text2">{{item.date}}</view>
+          </view>
+        </view>
+        <view class="points-num-plus" wx:if="{{item.type == 3}}">-{{item.integral}}</view>
+        <view class="points-num-add" wx:else>+{{item.integral}}</view>
+      </view>
+    </scroll-view>
+    <default-block wx:else defaultText="暂无更多积分"></default-block>
+  </view>
+
+  <view class="rule-area" wx:elif="{{ activeTab == '2'}}">
+    <view>1.每一位关注的用户生成一个专属二维码名片；</view>
+    <view>2.分享并邀请用户识别二维码进行关注，可获取10积分；</view>
+    <view>3.朋友进行二维码的生成和分享邀请他人关注，朋友可获取10积分，自己获取2积分</view>
+  </view>
+</view>

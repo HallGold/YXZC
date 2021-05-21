@@ -1,0 +1,88 @@
+<!--pages/car-more/car-more.wxml-->
+<import src="../../wxParser/index.wxml" />
+<view class="container">
+  <!-- banner -->
+  <swiper class="swiper" indicator-dots="false" autoplay="true" interval="5000" duration="1000">    
+    <block wx:for="{{ bannerList }}" wx:key="index">    
+      <swiper-item>    
+        <image class="slide-image" src="{{ item }}"/>    
+      </swiper-item>    
+    </block>    
+  </swiper>
+
+  <!-- 车简介 -->
+  <view class="car-overview">
+    <view class="overview_line flex-column">
+      <view class="overview_title">{{carInfo.title}}</view>
+    </view>
+  </view>
+  <view class="split-line"></view>
+
+  <!-- 会员相关 -->
+  <view class="setting_area">
+    <view class="tips_area flex-row">
+      <view class="tips_block">
+        <view class="tips_text1">会员充值2万元</view>
+        <view class="tips_text2"><text class="gold">{{carInfo.deductionOne}}元/天</text></view>
+      </view>
+      <view class="tips_block">
+        <view class="tips_text1">会员充值5万元</view>
+        <view class="tips_text2"><text class="gold">{{carInfo.deductionTwo}}元/天</text></view>
+      </view>
+      <view class="tips_block">
+        <view class="tips_text1">会员充值10万元</view>
+        <view class="tips_text2"><text class="gold">{{carInfo.deductionThree}}元/天</text></view>
+      </view>
+      <view class="tips_block">
+        <view class="tips_text1">非会员价</view>
+        <view class="tips_text2"><text class="gold">{{carInfo.price}}元/天</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="split-line"></view>
+
+  <!-- 服务 -->
+  <view class="service-line flex-row">
+    <view class="service-title">服务</view>
+    <view>线下预约看车   线下交易  客服24小时在线</view>
+  </view>
+  <view class="split-line"></view>
+
+  <!-- 富文本 -->
+  <template is="wxParser" data="{{wxParserData:article.nodes}}"/>
+
+  <!-- 车辆配置 -->
+  <view class="one_block">
+    <view class="detail_title">车辆配置</view>
+    <view class="setting_area flex-row">
+      <block wx:for="{{carInfo.lables}}" wx:key="index">
+        <view class="one_setting flex-column">
+          <image class="one_image" src="{{item.image}}"></image>
+          <view class="one_name">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="split-line"></view>
+
+  <!-- 租车保障 -->
+  <view class="one_block">
+    <view class="detail_title">租车保障</view>
+    <view class="setting_area flex-column">
+      <block wx:for="{{ensureList}}" wx:key="index">
+        <view class="one_setting2 flex-row">
+          <image class="one_image" src="{{item.image}}"></image>
+          <view style="margin-left:19rpx;">
+            <view class="one_title">{{item.name}}</view>
+            <view class="one_name">{{item.detail}}</view>
+          </view>
+        </view>
+      </block>
+    </view>  
+  </view>
+  
+  <!-- 按钮 -->
+  <view class="gold-btn" bindtap="goNext">咨询客服</view>
+</view>
+

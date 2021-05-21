@@ -1,0 +1,118 @@
+/* pages/car-plan/car-plan.wxss */
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 80rpx 0 80rpx 0;
+  background-color: #111111;
+}
+
+.title-line{
+  width: 100%;
+  margin-bottom: 30rpx;
+  padding: 0 30rpx;
+  justify-content: flex-start;
+}
+.title-icon{
+  width: 48rpx;
+  height: 48rpx;
+}
+.title-text{
+  margin-left: 20rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.common-text{
+  width: 100%;
+  line-height: 46rpx;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: white;
+}
+
+
+.service_process{
+  width: 690rpx;
+  margin: 30rpx auto;
+  padding: 30rpx 40rpx;
+  background: #161616;
+  border-radius: 16rpx;
+}
+.process_title{
+  justify-content: flex-start;
+}
+.process_num{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: linear-gradient(234deg, #BA9478, #FFE2BF);
+  border-radius: 50%;
+  font-size: 26rpx;
+  color: #252621;
+  text-align: center;
+}
+.process_title_content{
+  margin-left: 11rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: white;
+}
+.process_text{
+  width: 100%;
+  line-height: 46rpx;
+  margin: 20rpx 0;
+  font-size: 26rpx;
+  color: #FEFEFE;
+}
+
+
+.advantage_area{
+  width: 690rpx;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantage_block{
+  width: 336rpx;
+  height: 196rpx;
+  margin-bottom: 18rpx;
+  padding: 17rpx 23rpx;
+  background: #161616;
+  border: 1rpx solid #737373;
+  border-radius: 12rpx;
+}
+.advantage_title{
+  justify-content: flex-start;
+}
+.advantage_icon{
+  width: 24rpx;
+  height: 24rpx;
+}
+.advantage_text1{
+  margin-left: 13rpx;
+  font-size: 26rpx;
+  color: white;
+}
+.advantage_text2{
+  margin-top: 20rpx;
+  font-size: 20rpx;
+  color: white;
+}
+
+
+.gold-btn{
+  width: 690rpx;
+  line-height: 88rpx;
+  margin: 100rpx auto;
+  background: linear-gradient(91deg, #BA9478, #FFE2BF);
+  border-radius: 16rpx;
+  color: #252621;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+
+
+.mt80{
+  margin-top: 80rpx;
+}

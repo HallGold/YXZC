@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/car-plan/car-plan",
+    "pages/car-plan-next/car-plan-next",
+    "pages/car-detail/car-detail",
+    "pages/car-rent/car-rent",
+    "pages/car-more/car-more",
+    "pages/car-hosting/car-hosting",
+    "pages/car-hosting-next/car-hosting-next",
+    
+
+    "pages/customer-service/customer-service",
+
+    "pages/mine/mine",
+    "pages/mine-vip-one/mine-vip-one",
+    "pages/mine-vip-two/mine-vip-two",
+    "pages/mine-points/mine-points",
+    "pages/mine-money/mine-money",
+    "pages/responsibility/responsibility",
+    "pages/mine-feedback/mine-feedback",
+    "pages/mine-contact/mine-contact"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创客悦行",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ABABAB",
+    "selectedColor": "#252621",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "./images/tab1_focus.png",
+        "iconPath": "./images/tab1_blur.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/customer-service/customer-service",
+        "selectedIconPath": "./images/tab2_focus.png",
+        "iconPath": "./images/tab2_blur.png",
+        "text": "客服"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "selectedIconPath": "./images/tab3_focus.png",
+        "iconPath": "./images/tab3_blur.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

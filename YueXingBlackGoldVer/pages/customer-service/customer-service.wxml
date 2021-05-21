@@ -1,0 +1,21 @@
+<!--pages/customer-service/customer-service.wxml-->
+<!-- 客服列表 -->
+<view class="mine-relate">
+  <block wx:for="{{serviceList}}">
+    <view class="common-line more flex-row" data-id="{{item.id}}" bindtap="showErcode">
+      <image class="relate-icon" src="../../images/service_icon.png"></image>
+      <text class="relate-text">{{item.name}}</text>
+    </view>
+  </block>
+</view>
+
+<view class="pop-shadow" wx:if="{{showPop}}"></view>
+<view class="ercode-pop" wx:if="{{showPop}}">
+  <view class="ercode-content flex-column">
+    <view class="ercode-text1">{{serviceName}}</view>
+    <image class="ercode-img" src="{{ercodeSrc}}"></image>
+    <view class="ercode-text2">打开手机微信或长按图片 扫描二维码即可添加客服微信沟通</view>
+  </view>
+  <view class="ercode-close" bindtap="toggleShow">×</view>
+</view>
+

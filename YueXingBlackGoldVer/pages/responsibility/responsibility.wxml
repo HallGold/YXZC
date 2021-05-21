@@ -1,0 +1,6 @@
+<!--pages/responsibility/responsibility.wxml-->
+<import src="../../wxParser/index.wxml" />
+<view class="container">
+  <template is="wxParser" data="{{wxParserData:article.nodes}}"/>
+  <!-- <template is="wxParser" data="{{wxParseData:article.nodes}}"/> -->
+</view>

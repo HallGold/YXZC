@@ -1,0 +1,6 @@
+<!--pages/mine-feedback/mine-feedback.wxml-->
+<view class="container">
+  <textarea class="feedback" name="" id="" cols="30" rows="10" placeholder="请输入您的宝贵意见" bindinput="setContent"></textarea>
+  <view class="feedback-tip">您的意见或建议一经采纳将尽快与您取得联系</view>
+  <view class="feedback-btn" bindtap="postFeedback">确定</view>
+</view>

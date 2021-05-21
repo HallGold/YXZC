@@ -1,0 +1,154 @@
+/* pages/car-more/car-more.wxss */
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+.swiper{
+  width: 100%;
+  height: 230rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 230rpx;
+}
+
+
+.car-overview{
+  padding: 0 30rpx;
+}
+.overview_line{
+  height: 120rpx;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+.setting_area{
+  padding: 0 30rpx;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.setting_line{
+  line-height: 85rpx;
+  justify-content: space-between;
+}
+.setting_label,.setting_detail{
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #252621;
+}
+.tips_area{
+  margin: 30rpx auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tips_block{
+  width: 170rpx;
+  height: 90rpx;
+  margin-bottom: 10rpx;
+  padding: 12rpx 12rpx;
+  background: #252621;
+  border-radius: 12rpx;
+}
+.tips_text1{
+  font-size: 20rpx;
+  color: #888888;
+}
+.tips_text2{
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #888888;
+}
+.gold{
+  font-size: 20rpx;
+  color: #BA9478;
+}
+
+
+
+.service-line{
+  line-height: 84rpx;
+  justify-content: flex-start;
+}
+.service-title{
+  padding: 0 40rpx;
+  color: rgba(163, 163, 163, 1);
+}
+
+
+.one_block{
+  padding-bottom: 50rpx;
+}
+.detail_title{
+  position: relative;
+  margin-top: 50rpx;
+  padding: 0 30rpx;
+  color: #252621;
+  z-index: 2;
+}
+.detail_title::after{
+  position: absolute;
+  top: -6rpx;
+  left: 30rpx;
+  content: '';
+  width: 24rpx;
+  height: 24rpx;
+  background: linear-gradient(91deg, #BA9478, #FFE2BF);
+  border-radius: 50%;
+  z-index: -1;
+}
+.one_setting{
+  width: 33.3%;
+  margin-top: 30rpx;
+  justify-content: center;
+}
+.one_setting1{
+  width: 25%;
+  margin-top: 30rpx;
+  justify-content: center;
+}
+.one_setting2{
+  width: 100%;
+  margin-top: 30rpx;
+  justify-content: flex-start;
+}
+.one_image{
+  width: 88rpx;
+  height: 88rpx;
+}
+.one_name{
+  margin-top: 9rpx;
+  font-size: 24rpx;
+  color: #888888;
+}
+.one_title{
+  font-size: 26rpx;
+  color: #252621;
+  font-weight: bold;
+}
+
+
+
+.gold-btn{
+  width: 690rpx;
+  line-height: 88rpx;
+  margin: 100rpx auto 52rpx auto;
+  background: linear-gradient(91deg, #BA9478, #FFE2BF);
+  border-radius: 16rpx;
+  color: #252621;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+
+.split-line{
+  width: 100%;
+  height: 30rpx;
+  background-color: #F6F6F6;
+}
+
+
+.gray_text{
+  font-size: 24rpx;
+  color: #888888;
+}

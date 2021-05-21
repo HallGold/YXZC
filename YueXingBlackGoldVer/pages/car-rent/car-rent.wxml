@@ -1,0 +1,15 @@
+<!--pages/car-rent/car-rent.wxml-->
+<view class="container">
+  <view class="brand_list">
+    <view class="brand_box {{ !factor.typeIds ? 'selected_brand':''}}" style="top:-36rpx;" bindtap="selectBrand">
+      不限
+    </view>
+    <block wx:for="{{brandList}}" wx:key="index">
+      <view class="brand_box flex-row {{ factor.typeIds == item.id ? 'selected_brand':''}}" data-id="{{item.id}}" bindtap="selectBrand">
+        <image class="brand_icon" src="{{item.carLogo}}"></image>
+      </view>
+    </block>
+  </view>
+  <!-- 车辆列表 -->
+  <car-list factor="{{factor}}" type="2" pageNum="{{pageNum}}"></car-list>
+</view>

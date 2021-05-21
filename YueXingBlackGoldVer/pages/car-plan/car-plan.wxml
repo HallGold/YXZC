@@ -1,0 +1,78 @@
+<!--pages/car-plan/car-plan.wxml-->
+<view class="container">
+  <!-- 专属汽车租赁私人订制 -->
+  <view class="title-line flex-row">
+    <image class="title-icon" src="../../images/tuoguan1.png"></image>
+    <view class="title-text">专属汽车租赁私人订制</view>
+  </view>
+  <view class="common-text">对承租人进行“个性化设计、专属性服务”，即以购买“全新车专属使用权+悦行服务”的产品形式，代替传统买车租车。</view>
+
+  <!-- 私人订制服务流程 -->
+  <view class="title-line mt80 flex-row">
+    <image class="title-icon" src="../../images/xinche1.png"></image>
+    <view class="title-text">私人订制服务流程</view>
+  </view>
+  <view class="service_process">
+    <view class="process_title flex-row">
+      <view class="process_num">1</view>
+      <view class="process_title_content">订制需求</view>
+    </view>
+    <view class="process_text">在线提交需求，经专属客服经理沟通，与承租人达成车辆品牌、车型、款式、内饰、外观颜色的定制方案。</view>
+
+    <view class="process_title flex-row">
+      <view class="process_num">2</view>
+      <view class="process_title_content">租赁费用</view>
+    </view>
+    <view class="process_text">1、缴纳保证精30%，享受年租金优惠；2、缴纳保证金50%，享受年租金优惠，同时，租赁包括：本地车牌、购置税、保险、保养等，支付定金后等待提车。</view>
+
+    <view class="process_title flex-row">
+      <view class="process_num">3</view>
+      <view class="process_title_content">交付车辆</view>
+    </view>
+    <view class="process_text">按达成后的定制方案采购新车（公里数不超过50），支付租赁费用交付使用，期间享受悦行管家式服务，包括车辆保养、事故处理、道路救援等。</view>
+
+    <view class="process_title flex-row">
+      <view class="process_num">4</view>
+      <view class="process_title_content">合约结束</view>
+    </view>
+    <view class="process_text">合约结束后，可续（续租可继续享受折扣优惠），可退（退还车辆，退还保证金）、可换（更换同款或重新定制其他车型）</view>
+  </view>
+
+  <!-- 私人订制的优势 -->
+  <view class="title-line mt80 flex-row">
+    <image class="title-icon" src="../../images/xinche2.png"></image>
+    <view class="title-text">私人订制的优势</view>
+  </view>
+  <view class="advantage_area flex-row">
+    <view class="advantage_block">
+      <view class="advantage_title flex-row">
+        <image class="advantage_icon" src="../../images/advantage.png"></image>
+        <view class="advantage_text1">多点布局无限制</view>
+      </view>
+      <view class="advantage_text2">定制服务包含当地车牌的使用</view>
+    </view>
+    <view class="advantage_block">
+      <view class="advantage_title flex-row">
+        <image class="advantage_icon" src="../../images/advantage.png"></image>
+        <view class="advantage_text1">一站式服务</view>
+      </view>
+      <view class="advantage_text2">悦行服务为您处理保养、保险、年检、事故处理、道路救援等事宜</view>
+    </view>
+    <view class="advantage_block">
+      <view class="advantage_title flex-row">
+        <image class="advantage_icon" src="../../images/advantage.png"></image>
+        <view class="advantage_text1">低价格投入</view>
+      </view>
+      <view class="advantage_text2">承租人无需购买新车，即可享受新车的使用。承租人分别以汽车核定价的30%、50%保证金比例，支付相应的租金</view>
+    </view>
+    <view class="advantage_block">
+      <view class="advantage_title flex-row">
+        <image class="advantage_icon" src="../../images/advantage.png"></image>
+        <view class="advantage_text1">定制更灵活</view>
+      </view>
+      <view class="advantage_text2">合约期满后遵循可续、可退、可换。</view>
+    </view>
+  </view>
+
+  <view class="gold-btn" bindtap="goNext">查看车型</view>
+</view>

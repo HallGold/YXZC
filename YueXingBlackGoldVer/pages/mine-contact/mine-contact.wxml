@@ -1,0 +1,15 @@
+<!--pages/mine-contact/mine-contact.wxml-->
+<view class="container">
+  <view class="common-line flex-row">
+    <view>地址</view>
+    <view>{{contactInfo.address}}</view>
+  </view>
+  <view class="common-line flex-row">
+    <view>电话</view>
+    <view>{{contactInfo.phone}}</view>
+  </view>
+  <view class="common-line flex-row">
+    <view>邮箱</view>
+    <view>{{contactInfo.mail}}</view>
+  </view>
+</view>

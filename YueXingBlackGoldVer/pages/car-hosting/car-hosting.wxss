@@ -1,0 +1,110 @@
+/* pages/car-hosting/car-hosting.wxss */
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 80rpx 0 80rpx 0;
+  background-color: #111111;
+}
+
+.title-line{
+  width: 100%;
+  margin-bottom: 30rpx;
+  padding: 0 30rpx;
+  justify-content: flex-start;
+}
+.title-icon{
+  width: 48rpx;
+  height: 48rpx;
+}
+.title-text{
+  margin-left: 20rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.common-text{
+  width: 100%;
+  line-height: 46rpx;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: white;
+}
+
+.advantage-line{
+  justify-content: center;
+  margin: 91rpx auto 27rpx auto;
+}
+.advantage-icon{
+  width: 136rpx;
+  height: 21rpx;
+}
+.advantage-text{
+  margin: 0 16rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+.advantage_content{
+  width: 690rpx;
+  margin: 0 auto;
+  padding: 36rpx 22rpx; 
+  background: #161616;
+  border: 1rpx solid #737373;
+  border-radius: 16rpx;
+} 
+.advantage_block{
+  margin-top: 40rpx;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.advantage_block:first-child{
+  margin-top: 0;
+}
+.block_icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+.block_text1{
+  position: relative;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+}
+.block_text1::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2rpx;
+  width: 100%;
+  height: 8rpx;
+  background: linear-gradient(246deg, #BA9478, #FFE2BF);
+  z-index: -1;
+}
+.block_text2{
+  margin-top: 29rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FEFEFE;
+  line-height: 38rpx;
+}
+
+.gold-btn{
+  width: 690rpx;
+  line-height: 88rpx;
+  margin: 100rpx auto;
+  background: linear-gradient(91deg, #BA9478, #FFE2BF);
+  border-radius: 16rpx;
+  color: #252621;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+
+
+.mt80{
+  margin-top: 80rpx;
+}

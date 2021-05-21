@@ -1,0 +1,42 @@
+/* pages/car-rent/car-rent.wxss */
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 20rpx;
+  background-color: #F1F2F5;
+  overflow: hidden;
+}
+.brand_list{
+  width: 100vw;
+  height: 88rpx;
+  padding: 0 30rpx;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.brand_box{
+  position: relative;
+  display: inline-block;
+  width: 88rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-right: 20rpx;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  color: #252621;
+  text-align: center;
+}
+.brand_icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60rpx;
+  height: 60rpx;
+}
+.selected_brand{
+  border: 1rpx solid #252621;
+}

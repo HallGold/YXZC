@@ -1,0 +1,30 @@
+/* pages/mine-feedback/mine-feedback.wxss */
+.container{
+  width: 100%;
+  height: 100vh;
+}
+.feedback{
+  width: 690rpx;
+  height: 320rpx;
+  margin: 30rpx auto;
+  padding: 30rpx;
+  background: #FFFFFF;
+  box-shadow: -2rpx 2rpx 9rpx 0px #F2F2F2;
+  border-radius: 8rpx;
+}
+.feedback-tip{
+  padding-left: 60rpx;
+  color: #DFDFDF;
+  font-size: 22rpx;
+}
+.feedback-btn{
+  width: 690rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin: 94rpx auto;
+  background: linear-gradient(91deg, #BA9478, #FFE2BF);
+  border-radius: 12rpx 12rpx 11rpx 11rpx;
+  color: white;
+  font-size: 32rpx;
+  text-align: center;
+}

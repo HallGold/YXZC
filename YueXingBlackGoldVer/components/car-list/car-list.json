@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "default-block": "../../components/default-block/default-block"
+  }
+}

@@ -1,0 +1,77 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class="mine-head flex-column">
+    <view class="mine-info flex-row" wx:if="{{showBtn}}">
+      <image class="info-icon" src="../../images/user_default.png"></image>
+      <button class='getUserInfo-btn' open-type="getUserInfo" bindgetuserinfo="postUserInfoData">立即登录</button>
+    </view>
+    
+    <view wx:else>
+      <!-- 用户信息 -->
+      <view class="mine-info flex-row">
+        <image class="info-icon" src="{{userIcon}}"></image>
+        <view class="info-right flex-column">
+          <view class="info-name">{{userName}}</view>
+          <view class="info-level" wx:if="{{isVip=='0'}}">普通用户</view>
+          <view class="info-level vip-bg" wx:if="{{isVip=='1'}}">VIP会员</view>
+        </view>
+      </view>
+
+      <!-- 签到 -->
+      <view>
+        <view class="register-btn flex-row signyet" wx:if="{{signYet}}">
+          <text class="register-text">已签到</text>
+        </view>
+        <view class="register-btn flex-row" wx:else bindtap="postSign">
+          <image class="register-icon" src="../../images/register_icon.png"></image>
+          <text class="register-text">签到</text>
+        </view>
+      </view>
+
+      <!-- 注册会员 -->
+      <view class="member-area flex-row" wx:if="{{isVip=='0'}}">
+        <view class="flex-row">
+          <image class="member-icon" src="../../images/diamond.png"></image>
+          <view class="member-text1">创客悦行</view>
+        </view>
+        <view class="member-text2" data-index="9" bindtap="goNext">成为会员></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 常用功能 -->
+  <view class="mine-function flex-row">
+    <view class="function-item flex-column" data-index="2" bindtap="goNext">
+      <view class="function-bg flex-row">
+        <view class="function-text">我的积分</view>
+        <image class="function-icon" src="../../images/function1.png"></image>
+      </view>
+      <view class="function-text1" wx:if="{{showBtn}}">登录后查看</view>
+      <view class="function-text2" wx:else>{{userPoints}}</view>
+    </view>
+    <view class="function-item flex-column" data-index="1" bindtap="goNext">
+      <view class="function-bg flex-row">
+        <view class="function-text">我的余额</view>
+        <image class="function-icon" src="../../images/function2.png"></image>
+      </view>
+      <view class="function-text1" wx:if="{{showBtn}}">登录后查看</view>
+      <view class="function-text2" wx:else>￥{{balance}}</view>
+    </view>
+  </view>
+
+  <!-- 我的相关 -->
+  <view class="mine-relate">
+    <view class="common-line more flex-row" data-index="6" bindtap="goNext">
+      <image class="relate-icon" src="../../images/mine_icon2.png"></image>
+      <text class="relate-text">服务协议与政策</text>
+    </view>
+    <view class="common-line more flex-row" data-index="7" bindtap="goNext">
+      <image class="relate-icon" src="../../images/mine_icon3.png"></image>
+      <text class="relate-text">意见反馈</text>
+    </view>
+    <view class="common-line more flex-row" data-index="8" bindtap="goNext">
+      <image class="relate-icon" src="../../images/mine_icon4.png"></image>
+      <text class="relate-text">联系我们</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,68 @@
+/* pages/customer-service/customer-service.wxss */
+.mine-relate{
+  margin-top: 20rpx;
+}
+.common-line{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  padding: 0 30rpx;
+  justify-content: flex-start;
+}
+.relate-icon{
+  width: 64rpx;
+  height: 64rpx;
+}
+.relate-text{
+  margin-left: 20rpx;
+}
+
+
+.pop-shadow{
+  position: fixed;
+  width: 100vw;
+  height:  100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(22, 22, 22, 0.85);
+  z-index: 1;
+}
+.ercode-pop{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+.ercode-content{
+  width: 440rpx;
+  padding: 30rpx 20rpx;
+  background-color: white;
+  text-align: center;
+}
+.ercode-text1{
+  color: #101010;
+}
+.ercode-img{
+  width: 400rpx;
+  height: 400rpx;
+  margin-top: 20rpx;
+}
+.ercode-text2{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #888888;
+}
+
+.ercode-close{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 37rpx;
+  margin: 50rpx auto;
+  border-radius: 50%;
+  border: 1rpx solid white;
+  color: white;
+  text-align: center;
+}

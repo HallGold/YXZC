@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- banner -->
+  <swiper class="swiper"indicator-dots="{{indicatorDots}}" autoplay="false">    
+    <block wx:for="{{ bannerList }}" wx:key="index">    
+      <swiper-item>    
+        <image class="slide-image" src="{{ item.image }}" data-jumptype="{{ item.jumpType }}" data-url="{{ item.url }}" bindtap="goUrl"/>    
+      </swiper-item>    
+    </block>    
+  </swiper>
+
+  <!-- 功能入口 -->
+  <view class="entrance-list flex-row">
+    <view class="entrance flex-row" data-index="1" bindtap="goNext">
+      <image class="entrance-icon" src="../../images/index1.png"></image>
+      <view class="entrance-text">私人订制</view>
+    </view>
+    <view class="entrance flex-row" data-index="2" bindtap="goNext">
+      <image class="entrance-icon" src="../../images/index2.png"></image>
+      <view class="entrance-text">会员租车</view>
+    </view>
+    <view class="entrance flex-row" data-index="3" bindtap="goNext">
+      <image class="entrance-icon" src="../../images/index3.png"></image>
+      <view class="entrance-text">合作托管</view>
+    </view>
+  </view>
+
+  <view class="car-list-title">特价车</view>
+  <view class="car-list">
+    <block wx:for="{{carList}}" wx:key="id">
+      <view data-id="{{item.id}}" bindtap="goDetail">
+        <image class="car-img" src="{{item.image}}"></image>
+        <view class="car-intro flex-row">
+          <view class="car-text1">{{item.title}}</view>
+          <view class="car-text2">
+            <text class="price">{{item.price}}</text>元/天
+          </view>
+          <!-- <view class="car-text2" wx:if="{{item.price<10000}}">
+            ￥<text class="price">{{item.price}}</text>起
+          </view>
+          <view class="car-text2" wx:else>
+            ￥<text class="price">{{item.price/10000}}</text>万起
+          </view> -->
+        </view>  
+      </view>
+    </block>
+  </view>
+</view>

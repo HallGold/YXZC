@@ -1,0 +1,5 @@
+<!--pages/car-plan-next/car-plan-next.wxml-->
+<view class="container">
+  <!-- 车辆列表 -->
+  <car-list factor="{{factor}}" type="1"></car-list>
+</view>

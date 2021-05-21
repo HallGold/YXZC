@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "car-list": "../../components/car-list/car-list"
+  },
+  "navigationBarTitleText": "会员租车"
+}
